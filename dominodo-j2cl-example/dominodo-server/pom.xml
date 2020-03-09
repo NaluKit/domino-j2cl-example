@@ -62,15 +62,15 @@
       <activation>
         <activeByDefault>true</activeByDefault>
       </activation>
-      <dependencies>
-        <dependency>
-          <groupId>${project.groupId}</groupId>
-          <artifactId>dominodo-gwt</artifactId>
-          <version>${project.version}</version>
-          <type>war</type>
-          <scope>runtime</scope>
-        </dependency>
-      </dependencies>
+<!--      <dependencies>-->
+<!--        <dependency>-->
+<!--          <groupId>${project.groupId}</groupId>-->
+<!--          <artifactId>dominodo-gwt</artifactId>-->
+<!--          <version>${project.version}</version>-->
+<!--          <type>war</type>-->
+<!--          <scope>runtime</scope>-->
+<!--        </dependency>-->
+<!--      </dependencies>-->
     </profile>
     <profile>
       <id>env-dev</id>
