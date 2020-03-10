@@ -203,9 +203,9 @@
                         </executions>
                     </plugin>
                     <plugin>
-                        <groupId>net.cardosi.j2cl</groupId>
+                        <groupId>com.vertispan.j2cl</groupId>
                         <artifactId>j2cl-maven-plugin</artifactId>
-                        <version>0.2-SNAPSHOT</version>
+                        <version>0.13-SNAPSHOT</version>
                         <executions>
                             <execution>
                                 <id>run-devmode</id>
@@ -216,11 +216,6 @@
                             </execution>
                         </executions>
                         <configuration>
-                            <bytecodeClasspath>${java-classpath}:${webapp.libdir}/jre.jar:${webapp.libdir}/gwt-internal-annotations.jar</bytecodeClasspath>
-                            <j2clClasspath>${webapp.libdir}/bootstrap.js.zip:${webapp.libdir}/jre.js.zip</j2clClasspath>
-                            <outputJsPathDir>${webappdir}/js</outputJsPathDir>
-                            <sourceDir>${project.basedir}/src/main/java</sourceDir>
-                            <jsZipCacheDir>${project.basedir}/jsZipCache</jsZipCacheDir>
                             <entrypoint>org.dominokit.samples.App</entrypoint>
                             <externs>
                                 <extern>${project.basedir}/src/main/externs/w3c_clipboardevent.js</extern>
